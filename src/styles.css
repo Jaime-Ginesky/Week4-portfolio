@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+h1 {
+  text-align: right;
+  color: darkgray;
+  opacity: 80%;
+  font-size: 72px;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  text-align: center;
+  color: dimgray;
+  opacity: 60%;
+  font-size: 48px;
+  font-family: "Cormorant Garamond", serif;
+}
+p {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 25px;
+  opacity: 70%;
+  color: azure;
+}

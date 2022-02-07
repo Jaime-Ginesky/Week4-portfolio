@@ -4,13 +4,15 @@ body {
 h1 {
   text-align: right;
   color: darkgray;
+  margin: 20px 20px;
   opacity: 80%;
   font-size: 72px;
   font-family: "Poppins", sans-serif;
 }
 h2 {
-  text-align: center;
+  text-align: right;
   color: dimgray;
+  margin: 0 200px;
   opacity: 60%;
   font-size: 48px;
   font-family: "Cormorant Garamond", serif;
@@ -20,4 +22,8 @@ p {
   font-size: 25px;
   opacity: 70%;
   color: azure;
+}
+.hero {
+  background-color: rgb(42, 43, 44);
+  opacity: 95%;
 }

@@ -1,3 +1,15 @@
+@media (max-width: 576px) {
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 40 px;
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 body {
   background-color: black;
 }
@@ -6,6 +18,7 @@ h1 {
   color: azure;
   margin: 120px 80px 0px;
   opacity: 80%;
+
   font-size: 120px;
   font-family: "Poppins", sans-serif;
 }
@@ -47,27 +60,33 @@ img {
   position: relative;
   max-width: 100px;
   height: 150px;
-  margin: 25px;
+  margin: 80px;
   border: black 1px;
   opacity: 70%;
 }
-#logo-holder .image,
+#logo-holder .image-1,
+.image-2,
 #logo-holder .text {
   transition: opacity 0.4s ease-in-out;
 }
 #logo-holder .text {
   position: absolute;
-  top: 100px;
-  left: 175px;
-  opacity: 40%;
-  color: azure;
-  font-family: "Poppins";
-  font-size: 17px;
+  top: 50px;
+  left: 75px;
+  opacity: 1%;
 }
 
-#logo-holder:hover .image {
+#logo-holder:hover .image-1,
+.image-2 {
   opacity: 0;
 }
 #logo-holder:hover .text {
-  opacity: 8;
+  opacity: 10;
+  background-color: rgba(212, 222, 236, 0.342);
+  width: 350px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 40px;
+  transition: 0.7s ease-in-out;
+  color: azure;
 }

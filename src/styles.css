@@ -1,49 +1,64 @@
+:root {
+  --primary-color: #000000;
+  --text-color: #bfcccc;
+  --secondary-text-color: #909999;
+  --image-text-color: #323358;
+}
 @media (max-width: 576px) {
   h1,
-  h2 {
+  h2,
+  h3,
+  h4 {
     text-align: center;
-    font-size: 40 px;
+    font-size: 20px;
+    margin: 20px;
   }
-  .image {
+  .button-link {
+    box-sizing: content-box;
+    text-align: center;
+    margin-left: 30px;
+  }
+  a,
+  .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
 body {
-  background-color: black;
+  background-color: var(--primary-color);
+  margin: 0 auto;
 }
-h1 {
-  text-align: center;
-  color: azure;
-  margin: 120px 80px 0px;
-  opacity: 80%;
 
+h1 {
+  color: var(--text-color);
+  opacity: 80%;
   font-size: 120px;
   font-family: "Poppins", sans-serif;
 }
 h2 {
-  text-align: center;
-  color: azure;
-  margin: 40px 300px;
+  color: var(--text-color);
   opacity: 60%;
-  font-size: 48px;
+  font-size: 40px;
   font-family: "Cormorant Garamond", serif;
+}
+h3,
+h4 {
+  text-align: center;
+  margin: 20px;
+  color: var(--text-color);
 }
 p {
   font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  opacity: 70%;
-  color: black;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 4px;
+  padding: 20px;
 }
-img {
-  max-width: 400px;
-  height: auto;
-  border: black 1px;
-  border-radius: 7px;
-  display: flex;
-  justify-content: space-around;
-}
+
 .about-portrait {
   border-radius: 200px;
   display: flex;
@@ -54,20 +69,21 @@ img {
 }
 
 .card {
-  border: black 1px;
+  border: var(--primary-color) 1px;
 }
 #logo-holder {
   position: relative;
   max-width: 100px;
   height: 150px;
   margin: 80px;
-  border: black 1px;
+  border: var(--primary-color) 1px;
   opacity: 70%;
 }
 #logo-holder .image-1,
-.image-2,
+#logo-holder .image-2,
 #logo-holder .text {
   transition: opacity 0.4s ease-in-out;
+  margin: 40px;
 }
 #logo-holder .text {
   position: absolute;
@@ -77,16 +93,39 @@ img {
 }
 
 #logo-holder:hover .image-1,
-.image-2 {
+#logo-holder:hover .image-2 {
   opacity: 0;
+  margin: 40px;
 }
 #logo-holder:hover .text {
   opacity: 10;
-  background-color: rgba(212, 222, 236, 0.342);
+  background-color: var(--image-text-color);
   width: 350px;
   text-align: center;
   border-radius: 12px;
   padding: 40px;
   transition: 0.7s ease-in-out;
+  color: var(--text-color);
+}
+
+.button-link {
+  margin: 200px 40px 40px 10px;
+  display: flex;
+}
+.footer {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+.footer:hover {
   color: azure;
+  text-align: left;
+}
+
+.img-fluid {
+  max-width: 400px;
+  max-height: 250px;
+  border: 1px black;
+  border-radius: 18px;
+  margin: 40px;
+  display: inline;
 }

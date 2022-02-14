@@ -4,7 +4,7 @@
   --secondary-text-color: #909999;
   --image-text-color: #323358;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   h1,
   h2,
   h3,
@@ -126,6 +126,6 @@ p {
   max-height: 250px;
   border: 1px black;
   border-radius: 18px;
-  margin: 40px;
-  display: inline;
+  margin: 0 auto;
+  display: block;
 }

@@ -19,7 +19,7 @@
     margin-left: 30px;
   }
   a,
-  .footer {
+  .footer-link {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -167,14 +167,14 @@ h6 {
 }
 
 .button-link {
-  margin: 200px 40px 40px 10px;
   display: flex;
+  justify-content: center;
 }
-.footer {
+.footer-link {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
-.footer:hover {
+.footer-link:hover {
   color: azure;
   text-align: left;
 }

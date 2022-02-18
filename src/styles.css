@@ -67,23 +67,18 @@ p {
   margin: 10px 10px 0 400px;
   opacity: 50%;
 }
-
-.card {
-  border: var(--primary-color) 1px;
-}
 #logo-holder {
   position: relative;
-  max-width: 100px;
-  height: 150px;
   margin: 80px;
   border: var(--primary-color) 1px;
   opacity: 70%;
 }
-#logo-holder .image-1,
-#logo-holder .image-2,
+#logo-holder .img-1-fluid,
+#logo-holder .img-2-fluid,
+#logo-holder .img-3-fluid,
 #logo-holder .text {
   transition: opacity 0.4s ease-in-out;
-  margin: 40px;
+  margin: 50px;
 }
 #logo-holder .text {
   position: absolute;
@@ -92,15 +87,15 @@ p {
   opacity: 1%;
 }
 
-#logo-holder:hover .image-1,
-#logo-holder:hover .image-2 {
+#logo-holder:hover .img-1-fluid,
+#logo-holder:hover .img-2-fluid,
+#logo-holder:hover .img-3-fluid {
   opacity: 0;
-  margin: 40px;
+  margin: 50px;
 }
 #logo-holder:hover .text {
-  opacity: 10;
+  opacity: 5;
   background-color: var(--image-text-color);
-  width: 350px;
   text-align: center;
   border-radius: 12px;
   padding: 40px;
@@ -119,13 +114,4 @@ p {
 .footer:hover {
   color: azure;
   text-align: left;
-}
-
-.img-fluid {
-  max-width: 400px;
-  max-height: 250px;
-  border: 1px black;
-  border-radius: 18px;
-  margin: 0 auto;
-  display: block;
 }

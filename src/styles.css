@@ -17,6 +17,11 @@
     font-size: 20px;
     margin: 20px;
   }
+  a,
+  footer {
+    text-align: center;
+    font-size: 15px;
+  }
   .main-container h3 {
     text-align: center;
   }
@@ -28,10 +33,10 @@
     text-align: center;
     margin-left: 30px;
   }
-  a,
-  footer {
+  .contact-container h1 {
     text-align: center;
-    font-size: 15px;
+    font-size: 60px;
+    margin-bottom: 20px;
   }
 }
 * {
@@ -96,10 +101,23 @@ footer .footer-link {
   text-decoration: none;
 }
 footer .footer-link:hover {
-  color: azure;
+  color: cadetblue;
 }
-footer .social-links {
+footer .social-container {
+  margin-top: 19px;
+}
+footer .social-links a {
   color: azure;
+  text-decoration: none;
+  margin: 0 20px;
+  background: var(--secondary-text-color);
+  opacity: 60%;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+footer .social-links a:hover {
+  background: cadetblue;
 }
 
 .container {
@@ -198,8 +216,12 @@ footer .social-links {
   display: flex;
   justify-content: space-around;
   margin-left: 150px;
-  opacity: 50%;
+  opacity: 70%;
   padding: 20px;
+}
+.main-container h3 {
+  margin-top: 80px;
+  color: var(--text-color);
 }
 .about-container {
   color: var(--text-color);
@@ -217,7 +239,7 @@ footer .social-links {
   font-size: 15px;
 }
 .email-link:hover {
-  color: azure;
+  color: cadetblue;
   text-align: center;
 }
 .contact-container .contact a {

@@ -133,6 +133,14 @@ footer .social-links a {
 footer .social-links a:hover {
   background: cadetblue;
 }
+a {
+  text-decoration: none;
+  color: azure;
+}
+a:hover {
+  text-decoration: none;
+  color: cadetblue;
+}
 
 .container {
   position: relative;

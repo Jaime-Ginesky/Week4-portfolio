@@ -156,6 +156,7 @@ a:hover {
   height: 320px;
   margin: 15px;
   overflow: hidden;
+  border-radius: 10px;
 }
 .container .card .imgW,
 .container .card .contentW,
@@ -169,16 +170,23 @@ a:hover {
   width: 100%;
   height: 100%;
 }
-.container .card .imgW img,
-.container .card .imgS img,
-.container .card .imgC img {
+.container .card .imgW,
+.container .card .imgS, 
+.container .card .imgC {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 80%;
+  opacity: 50%;
+  background-color: rgb(101, 132, 148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .container .card .contentW::before,
 .container .card .contentS::before,
@@ -189,7 +197,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(15, 11, 0);
+  background: #FFFFFF;
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
   transform-origin: right;
@@ -224,13 +232,6 @@ a:hover {
 .container .card:hover .contentC .content {
   transform: translateX(0px);
   transition-delay: 0.5s;
-}
-.container .card .contentW .content h4,
-.container .card .contentS .content h5,
-.container .card .contentC .content h6 {
-  font-size: 1.3em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .about-portrait {

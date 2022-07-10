@@ -9,6 +9,7 @@
     text-align: center;
     font-size: 18px;
   }
+  
   .main-container h2,
   h4,
   h5,
@@ -21,6 +22,10 @@
   footer {
     text-align: center;
     font-size: 15px;
+  }
+  .slide-right {
+    overflow:visible;
+    margin-left: 0px;
   }
   .main-container h3 {
     text-align: center;
@@ -56,7 +61,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 body {
   display: flex;
@@ -67,15 +72,15 @@ body {
 }
 
 h1 {
-  color: var(--text-color);
+  color: var(--image-text-color);
   opacity: 80%;
   font-size: 120px;
   font-family: "Poppins", sans-serif;
 }
 h2 {
-  color: var(--text-color);
+  color:steelblue;
   opacity: 60%;
-  font-size: 40px;
+  font-size: 20px;
   font-family: "Cormorant Garamond", serif;
   padding-bottom: 30px;
 }
@@ -93,12 +98,13 @@ h5,
 h6 {
   color: white;
   text-align: center;
+  font-size: 20px;
 }
 h7 {
   display: block;
   margin: 0 auto;
   text-align: center;
-  color: aliceblue;
+  color: var(--text-color);
 }
 footer {
   margin: 5px 0;
@@ -142,6 +148,23 @@ a:hover {
   color: cadetblue;
 }
 
+.slide-right {
+  width:100%;
+  overflow:hidden;
+  margin-left: 300px;
+  max-width:500px;
+}
+
+.slide-right h2 {
+  animation:2s slide-right 2s forwards;
+     transform:translateY(-100%);
+}
+@keyframes slide-right {
+  to {
+    transform:translateX(0%);
+  }
+}
+
 .container {
   position: relative;
   display: flex;
@@ -156,7 +179,7 @@ a:hover {
   height: 320px;
   margin: 15px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 .container .card .imgW,
 .container .card .contentW,

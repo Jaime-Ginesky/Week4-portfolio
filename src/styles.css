@@ -22,7 +22,7 @@ body {
 h1 {
   color: var(--image-text-color);
   opacity: 80%;
-  font-size: 120px;
+  font-size: 150px;
   font-family: "Poppins", sans-serif;
 }
 h2 {
@@ -46,7 +46,7 @@ p {
 h4,
 h5,
 h6 {
-  color: white;
+  color: #323358;
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 20px;
@@ -152,7 +152,7 @@ a:hover {
   height: 100%;
   object-fit: cover;
   opacity: 35%;
-  background-color: rgb(101, 132, 148);
+  background-image: radial-gradient(azure, cadetblue);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,7 +254,7 @@ a:hover {
 }
 .button {
   text-decoration: none;
-  color: rgba(113, 174, 236, 0.8);
+  color: var(--image-text-color);
   background: rgb(233, 237, 240);
   padding: 20px;
   border-radius: 50%;
@@ -266,7 +266,7 @@ a:hover {
 }
 
 .glow-button:hover {
-  color:rgba(113, 174, 236, 0.8);
+  color: var(--image-text-color);
   box-shadow: 0 5px 15px rgba(52, 176, 230, 0.4);
 }
 

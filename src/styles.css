@@ -88,7 +88,7 @@ footer .social-links a {
   font-size: 20px;
 }
 footer .social-links a:hover {
-  background: cadetblue;
+  background: steelblue;
 }
 a {
   text-decoration: none;
@@ -96,7 +96,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: cadetblue;
+  color: steelblue;
 }
 .slide-down {
   width:100%;
@@ -228,6 +228,10 @@ a:hover {
 .button-link {
   display: flex;
   justify-content: center;
+}
+.button-link a:hover {
+  background-color: steelblue;
+  box-shadow: 0 5px 15px steelblue;
 }
 
 .email-link {

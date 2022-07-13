@@ -37,11 +37,10 @@ h2 {
 p {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  line-height: 1.5;
-  color: var(--text-color);
+  line-height: 2;
+  color: steelblue;
   text-align: center;
   border-radius: 4px;
-  padding: 20px;
 }
 h4,
 h5,
@@ -53,10 +52,11 @@ h6 {
 }
 .h7 {
   display: block;
-  margin: 0 auto;
   text-align: center;
   color: var(--text-color);
+  line-height: 2;
 }
+
 footer {
   margin: 5px 0;
   text-align: center;
@@ -242,15 +242,16 @@ a:hover {
 .contact-container .contact a {
   text-decoration: none;
   color: var(--secondary-text-color);
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Poppins", sans-serif serif;
   font-size: 20px;
+  line-height: 10px;
 }
 .contact-container .contact a:hover {
   color: cadetblue;
 }
 .contact h1 {
-  font-weight: 200;
-  font-family: "Julius Sans";
+  font-weight: 350;
+  font-family: "Poppins", sans-serif;
 }
 .button {
   text-decoration: none;
@@ -335,6 +336,7 @@ a:hover {
      box-sizing: content-box;
      text-align: center;
      margin-left: 30px;
+     padding: 20px;
    }
    .contact-container h1 {
      text-align: center;

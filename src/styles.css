@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
 body {
   display: flex;
@@ -51,11 +51,9 @@ h6 {
   font-size: 20px;
 }
 .h7 {
-  display: block;
   text-align: center;
   color: var(--text-color);
-  line-height: 2;
-}
+  }
 
 footer {
   margin: 5px 0;
@@ -245,17 +243,21 @@ a:hover {
 }
 .contact-container .contact a {
   text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
   color: var(--secondary-text-color);
   font-family: "Poppins", sans-serif serif;
   font-size: 20px;
-  line-height: 10px;
+  line-height: 30px;
 }
 .contact-container .contact a:hover {
   color: cadetblue;
 }
-.contact h1 {
+.contact-container .contact h1 {
   font-weight: 350;
   font-family: "Poppins", sans-serif;
+  padding-bottom: 60px;
+
 }
 .button {
   text-decoration: none;
@@ -347,4 +349,4 @@ a:hover {
      font-size: 60px;
      margin-bottom: 20px;
    }
- }
+  }

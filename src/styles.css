@@ -257,8 +257,8 @@ a:hover {
   font-weight: 350;
   font-family: "Poppins", sans-serif;
   padding-bottom: 60px;
-
-}
+  }
+  
 .button {
   text-decoration: none;
   color: var(--image-text-color);

@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #FFFFFF;
+  --primary-color: hsla(0, 27%, 81%, 0.702);
   --text-color: #bfcccc;
   --secondary-text-color: #909999;
   --image-text-color: #323358;
@@ -215,7 +215,7 @@ a:hover {
 
 .main-container h3 {
   margin-top: 90px;
-  color: var(--text-color);
+  color:#98ABC3;
 }
 .about-container {
   color: var(--text-color);
@@ -258,7 +258,7 @@ a:hover {
   font-family: "Poppins", sans-serif;
   padding-bottom: 60px;
   }
-  
+
 .button {
   text-decoration: none;
   color: var(--image-text-color);
